@@ -1,3 +1,29 @@
+# API de estudiantes · Práctica de TDD
+
+Ejercicio académico en C# y ASP.NET Core para practicar endpoints, filtros de autorización y pruebas de controladores. Este repositorio es un fork del material de clase.
+
+**C# · .NET 6 · Entity Framework Core · SQL Server · MSTest · Moq**
+
+## Organización
+
+- `PAC.WebAPI/`: controlador, filtro y configuración HTTP.
+- `PAC.BusinessLogic/` y `PAC.DataAccess/`: lógica y acceso a datos.
+- `PAC.Domain/`: entidad de estudiante.
+- `PAC.Tests.WebApi/`: pruebas de controladores.
+
+## Revisar el trabajo
+
+Con el SDK compatible instalado:
+
+```sh
+dotnet restore PAC.sln
+dotnet test PAC.sln
+```
+
+Para ejecutar la API, revisá la configuración de SQL Server antes de usar `dotnet run --project PAC.WebAPI`. Es material de aprendizaje con dependencias históricas; no se presenta como un servicio de producción.
+
+## Consigna original
+
 ## Prueba de Actuación en clase M6C
 
 Tiene que tenerse en cuenta que esto va a ser realizado con TDD, es decir 
